@@ -1,0 +1,6 @@
+package panorama_api
+
+import "runtime/debug"
+
+var buildInfo, _ = debug.ReadBuildInfo()
+var ModuleName = buildInfo.Main.Path
